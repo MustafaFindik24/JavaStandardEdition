@@ -68,5 +68,19 @@ public class Main {
         System.out.println(s);
         String name = new String("hi guys");
         System.out.println(name);
+        System.out.println("-----------------------------");
+        Inheritance in = new Inheritance("heyo", 3, "ok", 5);                    //Inheritance example
+        Java java = new Java();                                                     //calling constructor of java class with no parameters
+        in.alright();
+        java.hello();
+        in.hello();
+        System.out.println("-----------------------------");
+        Sınıf sınıf = new Sınıf();                                                  // abstract example
+        sınıf.helloAbs();
+        sınıf.worldAbs();
+        System.out.println("------------------------------");
+        in.helloWorld();                                                            // usage of interface
+        in.startingInterface("hello world");
+        in.interfaceWithBody();
     }
 }
