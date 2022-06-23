@@ -9,7 +9,10 @@ public class Main {
         System.out.println("-----------------------------");
         Anony anony = new Anony();
         anony.createClass();
-
+        System.out.println("-----------------------------");
+        System.out.println(Size.EXTRALARGE);
+        Test test = new Test(Size.LARGE);                   //Enum class example
+        test.orderPizza();
 
 
     }
