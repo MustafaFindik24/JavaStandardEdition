@@ -5,9 +5,10 @@ public class Lists {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Stack<String> stack = new Stack<>();
-        Queue<String> animal1 = new LinkedList<>();
-        Queue<String> animal2 = new ArrayDeque<>();
-        Queue<String> animal3 = new PriorityQueue<>();
+        Queue<String> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList1 = new LinkedList<>();
+        Queue<String> arrayDeque = new ArrayDeque<>();
+        Queue<Integer> priorityQueue = new PriorityQueue<>();
         list.add(23);
         list.add(34);
         list.add(55);
@@ -24,8 +25,25 @@ public class Lists {
         System.out.println("Our stack is : " + stack);
         System.out.println("Top value of the stack :" + stack.peek());
         System.out.println("Is the stack empty? Answer is " + stack.empty());
-
-
-
+        System.out.println("----------------------------------");
+        linkedList.offer("hi");
+        linkedList.offer("guys");
+        linkedList.offer("my");
+        linkedList.offer("name");
+        linkedList.offer("is");
+        linkedList.offer("Mustafa");
+        System.out.println("Queue : " + linkedList);
+        System.out.println("Header of the queue is : " + linkedList.peek());
+        System.out.println("Removed element is : " + linkedList.remove());
+        System.out.println("New header is : " + linkedList.peek());
+        System.out.println("The element of removed header and returned :" + linkedList.poll());
+        System.out.println(linkedList.peek());
+        System.out.println("----------------------------------");
+        priorityQueue.add(1);
+        priorityQueue.add(2);
+        priorityQueue.add(3);
+        System.out.println(priorityQueue);
+        priorityQueue.offer(5);
+        System.out.println(priorityQueue);
     }
 }
